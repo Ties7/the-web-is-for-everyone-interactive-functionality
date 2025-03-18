@@ -30,6 +30,16 @@ app.get('/stekjes', async function (request, response) {
   response.render('stekjes.liquid', {stekjes: stekjesResponseJSON.data})
 })
 
+app.get('/stekje/:id', async function (request, response) {
+  const stekje = request.params.id
+
+  const stekjeResponse = await fetch(`https://fdnd-agency.directus.app/items/bib_stekjes/?filter={"id":"${stekje}"}`)  
+  const stekjeResponseJSON = await stekjeResponse.json()  
+  console.log(stekjeResponseJSON)
+
+  response.render('stekje.liquid', {stekje: stekjeResponseJSON.data[0]})
+})
+
 /*
 // Zie https://expressjs.com/en/5x/api.html#app.get.method over app.get()
 app.get(…, async function (request, response) {
