@@ -1,0 +1,36 @@
+{% render 'partials/head.liquid', title: 'Stekjes' %}
+
+<section class="head">
+
+    <header>
+        <img class="logo" src="../assets/biebinbloei-logo1.svg" alt="">
+        {% comment %} <nav>
+            <ul>
+                <li><a href="#">stekjes</a></li>
+                <li><a href="#">zaden</a></li>
+                <li><a href="#">geveltuin</a></li>
+                <li><a href="#">agenda</a></li>
+                <li><a href="#">partners</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav> {% endcomment %}
+    </header>
+
+    <h1>Stekjes</h1>
+</section>
+
+
+<main class="stekjes">
+{% for stekje in stekjes %}
+    <article>
+        <a href="stekje/{{ stekje.id }}">
+        
+        <img class="stekjes-img" src="https://fdnd-agency.directus.app/assets/{{ stekje.foto }}" alt="">
+        <h3>{{ stekje.naam }}</h3>
+
+        </a>
+    </article>
+{% endfor %}
+</main>
+
+{% render 'partials/foot.liquid' %}
