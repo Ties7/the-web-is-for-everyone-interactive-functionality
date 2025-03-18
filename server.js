@@ -24,7 +24,11 @@ app.engine('liquid', engine.express());
 app.set('views', './views')
 
 
-console.log('Let op: Er zijn nog geen routes. Voeg hier dus eerst jouw GET en POST routes toe.')
+app.get('/stekjes', async function (request, response) {
+  const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto')  
+  const stekjesResponseJSON = await stekjesResponse.json()
+  response.render('stekjes.liquid', {stekjes: stekjesResponseJSON.data})
+})
 
 /*
 // Zie https://expressjs.com/en/5x/api.html#app.get.method over app.get()
