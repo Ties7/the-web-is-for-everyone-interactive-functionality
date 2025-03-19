@@ -40,6 +40,44 @@ app.get('/stekje/:id', async function (request, response) {
   response.render('stekje.liquid', {stekje: stekjeResponseJSON.data[0]})
 })
 
+app.post('/like', async function (request, response) {
+  const url = `https://fdnd-agency.directus.app/items/bib_messages?filter={"for":"Stekje ${request.body.stekjeid}"}`
+
+  const stekjesResponse = await fetch(url)
+  const stekjesResponseJSON = await stekjesResponse.json()
+  
+
+  if(stekjesResponseJSON.data.length > 0) {
+    const likes = parseInt(stekjesResponseJSON.data[0].from || '1');
+    const newLikes = likes + 1;
+
+    	await fetch(`https://fdnd-agency.directus.app/items/bib_messages/${stekjesResponseJSON.data[0].id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json;charset=UTF-8'
+      },
+      body: JSON.stringify({
+        from: newLikes,
+      }),
+    })
+  } else {  
+    await fetch('https://fdnd-agency.directus.app/items/bib_messages', {
+      method: 'POST',
+      body: JSON.stringify({
+        for: `Stekje ${request.body.stekjeid}`,
+        from: 1
+      }),
+      headers: {
+        'Content-Type': 'application/json;charset=UTF-8'
+      }
+    });
+  } 
+
+  response.redirect(303, `/stekje/${request.body.stekjeid}`)
+})
+
+
+
 /*
 // Zie https://expressjs.com/en/5x/api.html#app.get.method over app.get()
 app.get(…, async function (request, response) {

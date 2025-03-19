@@ -37,6 +37,13 @@
             <p>{{ stekje.land_van_herkomst }}</p>
         </details>
     </article>
+    <form action="/like" method="POST">
+        <input type="hidden" name="stekjeid" value="{{ stekje.id }}">
+        <input type="text" name="text" >
+        <button type="submit" class="like-button">
+            ❤️
+        </button>
+    </form>
 </main>
 
 
