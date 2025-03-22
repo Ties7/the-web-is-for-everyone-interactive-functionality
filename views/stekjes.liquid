@@ -22,14 +22,16 @@
 
 <main class="stekjes">
 {% for stekje in stekjes %}
-    <article>
-        <a href="stekje/{{ stekje.id }}">
-        
-        <img class="stekjes-img" src="https://fdnd-agency.directus.app/assets/{{ stekje.foto }}" alt="">
-        <h3>{{ stekje.naam }}</h3>
+    <ul>
+        <li>
+            <a href="stekje/{{ stekje.id }}">
+            
+            <img class="stekjes-img" src="https://fdnd-agency.directus.app/assets/{{ stekje.foto }}" alt="">
+            <h3>{{ stekje.naam }}</h3>
 
-        </a>
-    </article>
+            </a>
+        </li>
+    </ul>
 {% endfor %}
 </main>
 
