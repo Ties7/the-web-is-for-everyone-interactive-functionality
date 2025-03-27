@@ -50,6 +50,13 @@
                 color: white;
             }
         }
+
+        button {
+            border: none;
+            background: none;
+            scale: 200%;
+            cursor: pointer;
+        }
     }
 
     @media (min-width: 600px) {

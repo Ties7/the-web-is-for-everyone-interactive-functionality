@@ -27,7 +27,12 @@ app.set('views', './views')
 app.get('/stekjes', async function (request, response) {
   const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto')  
   const stekjesResponseJSON = await stekjesResponse.json()
+
   response.render('stekjes.liquid', {stekjes: stekjesResponseJSON.data})
+
+  // dit snap ik niet
+
+  // 
 })
 
 app.get('/stekje/:id', async function (request, response) {

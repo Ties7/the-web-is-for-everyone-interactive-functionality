@@ -31,6 +31,14 @@
 
             </a>
         </li>
+
+        <form action="/like" method="POST">
+            <input type="hidden" name="stekjeid" value="{{ stekje.id }}">
+            <button type="submit" class="like-button">
+                ❤️
+                <p>{{ stekje.from }}</p>
+            </button>
+        </form>
     </ul>
 {% endfor %}
 </main>
