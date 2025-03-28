@@ -23,6 +23,9 @@ app.engine('liquid', engine.express());
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
 
+app.get('/', async function (request, response) {
+  response.render('stekjes.liquid', {stekjes: stekjesResponseJSON.data})
+})
 
 app.get('/stekjes', async function (request, response) {
   const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto')  
