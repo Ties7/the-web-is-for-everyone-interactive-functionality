@@ -25,6 +25,9 @@ app.set('views', './views')
 
 app.get('/', async function (request, response) {
   const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto')  
+
+  // const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto&filter={"id":"13"}')
+
   const stekjesResponseJSON = await stekjesResponse.json()
 
   response.render('stekjes.liquid', {stekjes: stekjesResponseJSON.data})
@@ -40,6 +43,7 @@ app.get('/', async function (request, response) {
 
 //   // 
 // })
+
 
 app.get('/stekje/:id', async function (request, response) {
   const stekje = request.params.id
@@ -84,7 +88,9 @@ app.post('/like', async function (request, response) {
     });
   } 
 
-  response.redirect(303, `/stekje/${request.body.stekjeid}`)
+  // response.redirect(303, `/stekje/${request.body.stekjeid}`)
+  response.redirect(303, `/`)
+
 })
 
 
