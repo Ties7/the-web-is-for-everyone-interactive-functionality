@@ -1,12 +1,19 @@
+/* loading state */
 .loader {
-    border: 10px solid #f3f3f3;
-    border-top: 10px solid black;
+    border: 8px solid #F9E9C2;
+    border-top: 8px solid #FF8D06;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     animation: spin .7s cubic-bezier(.21,-0.03,.08,.91) infinite;
 
     opacity: 0%;
+
+    position: fixed;
+    top: 50%;
+    left: 47.5%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
 }
   
 @keyframes spin {
