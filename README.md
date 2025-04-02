@@ -34,13 +34,16 @@ Als je op een stekje drukt ga je naar de detailpagina van het stekje. Daar staat
 De html en css is genest om overzicht te houden in de code
 https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/1b881faf7d715dde82e948b966c139760bcb1633/public/stekjes.css#L52-L90
 
-
-
 De stekjes worden ingeladen door middel van for loops
 https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/1b881faf7d715dde82e948b966c139760bcb1633/views/stekjes.liquid#L26-L47
 
 Mochten er geen stekjes ingeladen worden komt er een vervangende tekst te staan inplaats van alle stekjes
 https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/e2f30e90d9d128ed61c6f45d0513b646e9003146/views/stekjes.liquid#L45-L46
+
+
+
+https://github.com/user-attachments/assets/f3c56561-f6be-4e3a-9b95-82d054d391a3
+
 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framework of library gebruikt? -->
 
