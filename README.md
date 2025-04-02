@@ -42,9 +42,9 @@ Mochten er geen stekjes ingeladen worden komt er een vervangende tekst te staan 
 https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/82bd9e30f4a4826716d4d950491a0cfd0b22a67a/views/stekjes.liquid#L26-L47
 Het bovenste word uitgevoerd (alles boven % else %). Mocht dat niet kunnen dan geld het onderste wat in dit geval de tekst toont dat er geen stekjes beschikbaar zijn.
 
-
-
+Als er word geliked is er een loading spinner te zien totdat de like verstuurd en ontvangen is
 https://github.com/user-attachments/assets/f3c56561-f6be-4e3a-9b95-82d054d391a3
+https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/82bd9e30f4a4826716d4d950491a0cfd0b22a67a/views/stekjes.liquid#L50-L110
 
 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framework of library gebruikt? -->
