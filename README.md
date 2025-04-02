@@ -46,6 +46,10 @@ Als er word geliked is er een loading spinner te zien totdat de like verstuurd e
 https://github.com/user-attachments/assets/f3c56561-f6be-4e3a-9b95-82d054d391a3
 https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/82bd9e30f4a4826716d4d950491a0cfd0b22a67a/views/stekjes.liquid#L50-L110
 
+Via deze server side js worden de detailpagina's gemaakt voor de stekjes
+https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/dc22446c1b132789b07b85677dc6b7923bebeb03/server.js#L48-L56
+Aller eerst word de route gedefinieerd '/stekje/:id' deze code zegt dat er voor elk id een losse stekje pagina komt. En dat klopt, want elk losse stekje heeft zijn eigen detailpagina nodig. Via dat id word dynamisch op id een pagina gemaakt, dit is handig, omdat als er nu een nieuw stekje zou worden toegevoegd in de database dan word er automatisch een nieuwe detailpagina voor dat stekje aangemaakt.
+
 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framework of library gebruikt? -->
 
