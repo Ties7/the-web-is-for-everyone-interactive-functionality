@@ -24,10 +24,19 @@ Live website: https://the-web-is-for-everyone-interactive-wwpt.onrender.com/
 <!-- Voeg een link toe naar GitHub Pages 🌐-->
 
 ## Gebruik
+Op de hoofdpagina staan alle stekjes die worden ingeladen uit de database waar de stekjes in staan. Mochten de stekjes niet juist ingeladen worden komt er een error te staan 'Er zijn op dit moment helaas geen stekjes beschikbaar'. Onder elk stekje staat een hartje (like button). Als je op het hartje klikt en dus liked krijg je een loading spinner te zien totdat de like echt is gelukt, dit voorkomt dat de gebruiker niet weet of er echt is geliked, de persoon krijgt dus feedback. 
+Het liken word opgeslagen in de database, daar staat onder elk stekje hoeveel likes het heeft. Hoeveel likes een plantje heeft heb ik nog niet kunnen uitwerken in deze website, maar dat ben ik wel van plan.
 
+Als je op een stekje drukt ga je naar de detailpagina van het stekje. Daar staat informatie over dingen als giftigheid, land van herkomst etc..
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
 
 ## Kenmerken
+De html en css is genest om overzicht te houden in de code
+https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/1b881faf7d715dde82e948b966c139760bcb1633/public/stekjes.css#L52-L90
+
+De stekjes worden ingeladen door middel van for loops
+https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/1b881faf7d715dde82e948b966c139760bcb1633/views/stekjes.liquid#L26-L47
+
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framework of library gebruikt? -->
 
 ## Installatie
