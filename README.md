@@ -36,9 +36,11 @@ https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/
 
 De stekjes worden ingeladen door middel van for loops
 https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/1b881faf7d715dde82e948b966c139760bcb1633/views/stekjes.liquid#L26-L47
+Een for loop hoef je maar 1 keer te schrijven en eigenlijk op basis van hoeveel keer iets in de database staat (wat in dit geval stekjes zijn) voert die die code voor elk stekje uit. Dit is handig, omdat als er nu stekjes bij zouden komen in die database die automatisch toe worden gevoegd op de website.
 
 Mochten er geen stekjes ingeladen worden komt er een vervangende tekst te staan inplaats van alle stekjes
-https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/e2f30e90d9d128ed61c6f45d0513b646e9003146/views/stekjes.liquid#L45-L46
+https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/82bd9e30f4a4826716d4d950491a0cfd0b22a67a/views/stekjes.liquid#L26-L47
+Het bovenste word uitgevoerd (alles boven % else %). Mocht dat niet kunnen dan geld het onderste wat in dit geval de tekst toont dat er geen stekjes beschikbaar zijn.
 
 
 
