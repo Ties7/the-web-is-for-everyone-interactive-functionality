@@ -16,7 +16,8 @@ De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-web
 
 ## Beschrijving
 Bieb in Bloei
-![Uploading Schermopname (71).png…]()
+![Schermopname (71)](https://github.com/user-attachments/assets/7aa20e4f-6c57-4294-b64d-b60d58e87020)
+
 
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual of video toe 📸 -->
