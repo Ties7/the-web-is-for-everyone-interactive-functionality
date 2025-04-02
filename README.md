@@ -15,6 +15,9 @@ De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-web
   * [Licentie](#licentie)
 
 ## Beschrijving
+Bieb in Bloei
+![Uploading Schermopname (71).png…]()
+
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual of video toe 📸 -->
 <!-- Voeg een link toe naar GitHub Pages 🌐-->
