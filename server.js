@@ -24,13 +24,31 @@ app.engine('liquid', engine.express());
 app.set('views', './views')
 
 app.get('/', async function (request, response) {
-  const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto')  
+  const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto')
+  const messagesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_messages/?fields=for,from')
 
   // const stekjesResponse = await fetch('https://fdnd-agency.directus.app/items/bib_stekjes/?fields=id,naam,foto&filter={"id":"13"}')
 
   const stekjesResponseJSON = await stekjesResponse.json()
+  const messagesReponseJSON = await messagesResponse.json()
 
-  response.render('stekjes.liquid', {stekjes: stekjesResponseJSON.data})
+  const stekjesData = stekjesResponseJSON.data
+  const messagesData = messagesReponseJSON.data
+
+  // Loop door alle stekjes in de stekjes array heen
+  for(const stekje of stekjesData) {
+    // Zoek naar een message uit de messages array met de juiste stekjes-id
+    const message = messagesData.find((msg) => msg.for === `Stekje ${stekje.id}`)
+    
+    if(message) {
+      // Als de message bestaat, stel de likes voor het stekje in
+      stekje.likes = parseInt(message.from)
+    } else {
+      // Anders, stel de likes op 0 in
+      stekje.likes = 0
+    }
+  }
+  response.render('stekjes.liquid', { stekjes: stekjesData })
 })
 
 // app.get('/stekjes', async function (request, response) {
@@ -66,7 +84,7 @@ app.post('/like', async function (request, response) {
     const likes = parseInt(stekjesResponseJSON.data[0].from || '1');
     const newLikes = likes + 1;
 
-    	await fetch(`https://fdnd-agency.directus.app/items/bib_messages/${stekjesResponseJSON.data[0].id}`, {
+    await fetch(`https://fdnd-agency.directus.app/items/bib_messages/${stekjesResponseJSON.data[0].id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json;charset=UTF-8'

@@ -34,11 +34,11 @@
             </a>
         </li>
 
-        <form action="/like" method="POST" data-enhanced="form">
+        <form action="/like" method="POST" data-enhanced="form-{{ stekje.id }}">
             <input type="hidden" name="stekjeid" value="{{ stekje.id }}">
             <button type="submit" class="like-button">
                 ❤️
-                <p>{{ stekje.from }}</p>
+                <p>{{ stekje.likes }}</p>
             </button>
         </form>
     </ul>
@@ -87,6 +87,7 @@ if ('fetch' in window && 'DOMParser' in window) {
     // De server redirect op de normale manier, en geeft HTML terug
     // (De server weet niet eens dat deze fetch via client-side JavaScript gebeurde)
     const responseText = await response.text()
+    console.log(responseText)
 
     // Normaal zou de browser die HTML parsen en weergeven, maar daar moeten we nu zelf iets mee
     // Parse de nieuwe HTML en maak hiervan een nieuw Document Object Model in het geheugen
