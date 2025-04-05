@@ -64,6 +64,9 @@ Mocht je dingen veranderen in server.js moet je je lokale 'server' opnieuw start
 Om hem op te starten typ je weer 'npm start' in de terminal. Nu kun je werken in je eigen omgeving doormiddel van node :)
 <!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
 
+## Accessibility
+![Schermopname (72)](https://github.com/user-attachments/assets/bdb80168-8962-4d4f-b2b5-22d19f9ea4b4)
+
 
 ## Bronnen
 
