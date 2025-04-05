@@ -31,6 +31,16 @@ Als je op een stekje drukt ga je naar de detailpagina van het stekje. Daar staat
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
 
 ## Kenmerken
+### Ontwerp
+![image](https://github.com/user-attachments/assets/fe3da450-3e91-4a38-bebd-120cf11252c3)
+![image](https://github.com/user-attachments/assets/7e206d39-4877-431f-adbe-32b6fded5a4d)
+Ik heb er voor gekozen om de like knop links onder neer te zetten. Dit heb ik gedaan, omdat op veel andere social media daar ook de like knop zit en dit dus een logische plek is voor mensen.
+
+
+![Schermopname (73)](https://github.com/user-attachments/assets/e0f2d1ce-a1c1-45bb-a346-ce1fae0eede1)
+Ik heb gekozen om een loading spinner te laten zien wanneer er geliked word. Dit heb ik gedaan, omdat dit voor feedback zorgt. Daardoor weet de gebruiker bijvoorbeeld dat die niet heeft misgeklikt en dat de like ook echt aan het verwerken is.
+
+### Code
 De html en css is genest om overzicht te houden in de code
 https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/1b881faf7d715dde82e948b966c139760bcb1633/public/stekjes.css#L52-L90
 
