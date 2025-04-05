@@ -65,7 +65,12 @@ Om hem op te starten typ je weer 'npm start' in de terminal. Nu kun je werken in
 <!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
 
 ## Accessibility
+Er is rekening gehouden om te zorgen dat de website te gebruiken is voor iedereen.
+Uit de lighthouse test in de inspector kwam 90%, dit is nog niet optimaal, maar zeker niet slecht (zie foto)
 ![Schermopname (72)](https://github.com/user-attachments/assets/bdb80168-8962-4d4f-b2b5-22d19f9ea4b4)
+Daarnaast is in het linker deel te zien dat alles tabbaar is.
+Ook is er rekening gehouden met screen readers. Zo is de alt van elke foto dynamisch.
+https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/main/views/stekjes.liquid#L31
 
 
 ## Bronnen
