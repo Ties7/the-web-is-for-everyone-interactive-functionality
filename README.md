@@ -72,6 +72,8 @@ Daarnaast is in het linker deel te zien dat alles tabbaar is.
 Ook is er rekening gehouden met screen readers. Zo is de alt van elke foto dynamisch.
 https://github.com/Ties7/the-web-is-for-everyone-interactive-functionality/blob/main/views/stekjes.liquid#L31
 
+Daarnaast is de website getest door 3 gebruikers op verschillende oude apparaten en browsers. Hieruit kwam dat sommige styling op hele oude browser versies het niet doet. Dat is opzich helemaal geen probleem aangezien de corefunctionalities het wel bleven doen, zoals het kunnen navigeren naar de detailpagina's en de stekjes liken.
+
 
 ## Bronnen
 
